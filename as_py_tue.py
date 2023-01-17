@@ -31,11 +31,24 @@ for precip_data in precipitation_file:
             total[month] +=precip_data["value"]
         else:
             total[month] = precip_data["value"]
-print(total)
 
 # In the above loop, the total value was found for all months
 
 # Part 2
+        year = split_date[0]
+        print(year)
+     
+        if year in total:
+            total[year] +=precip_data["value"]
+        else:
+            total[year] = precip_data["value"]
+print(total)
+
+
+
+
+
+
 
 
 
